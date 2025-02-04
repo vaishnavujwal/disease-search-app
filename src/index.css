@@ -1,0 +1,42 @@
+.app-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 90%;
+}
+
+.app-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.app-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 40%;
+  }
+}
