@@ -8,7 +8,7 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <input
         type="text"
         placeholder="Enter disease in any language..."

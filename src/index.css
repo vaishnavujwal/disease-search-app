@@ -1,42 +1,83 @@
 .app-container {
   text-align: center;
-  margin: 20px auto;
-  padding: 10px;
-  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 500px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app-logo {
-  width: 120px;
-  margin-bottom: 15px;
+  width: 100px;
+  margin-bottom: 20px;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .app-title {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 input {
   width: 90%;
-  max-width: 300px;
-  padding: 10px;
-  margin-bottom: 10px;
+  max-width: 350px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
 }
 
 button {
-  width: 100px;
-  padding: 10px;
+  width: 120px;
+  padding: 12px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 480px) {
+  .app-container {
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
   .app-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   input {
     width: 100%;
+    padding: 10px;
   }
 
   button {
-    width: 40%;
+    width: 50%;
+    padding: 10px;
   }
 }

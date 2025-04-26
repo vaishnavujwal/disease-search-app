@@ -1,14 +1,94 @@
+// src/data/diseases.js
+
 const diseases = {
     headache: { tablet: "Aspirin", info: "Aspirin helps reduce pain, fever, and inflammation." },
-    fever: {tablet: "Paracetamol", info: "Paracetamol reduces fever and mild to moderate pain." },
-    cold: {tablet: "Cetirizine", info: "Cetirizine is an antihistamine that relieves allergy symptoms." },
-    cough: {tablet: "Dextromethorphan", info: "Dextromethorphan suppresses dry cough." },
+    fever: { tablet: "Paracetamol", info: "Paracetamol reduces fever and mild to moderate pain." },
+    cold: { tablet: "Cetirizine", info: "Cetirizine is an antihistamine that relieves allergy symptoms." },
+    cough: { tablet: "Dextromethorphan", info: "Dextromethorphan suppresses dry cough." },
     pain: { tablet: "Ibuprofen", info: "Ibuprofen is a pain reliever and reduces inflammation." },
-    allergy: {tablet: "Loratadine", info: "Loratadine treats allergy symptoms like sneezing and itching." },
-    indigestion:{ tablet: "Omeprazole", info: "Omeprazole reduces stomach acid and treats heartburn." },
+    allergy: { tablet: "Loratadine", info: "Loratadine treats allergy symptoms like sneezing and itching." },
+    indigestion: { tablet: "Omeprazole", info: "Omeprazole reduces stomach acid and treats heartburn." },
     nausea: { tablet: "Ondansetron", info: "Ondansetron prevents nausea and vomiting." },
     diarrhea: { tablet: "Loperamide", info: "Loperamide slows bowel movement to treat diarrhea." },
-    constipation: {tablet: "Lactulose", info: "Lactulose is a laxative that helps with constipation." }
-};
-
-export default diseases;
+    constipation: { tablet: "Lactulose", info: "Lactulose is a laxative that helps with constipation." },
+    
+    sore_throat: { tablet: "Lozenges", info: "Lozenges soothe sore throat pain." },
+    vomiting: { tablet: "Domperidone", info: "Domperidone prevents nausea and vomiting." },
+    asthma: { tablet: "Salbutamol", info: "Salbutamol is a bronchodilator that eases breathing." },
+    diabetes: { tablet: "Metformin", info: "Metformin controls blood sugar levels." },
+    hypertension: { tablet: "Amlodipine", info: "Amlodipine relaxes blood vessels and lowers blood pressure." },
+    malaria: { tablet: "Chloroquine", info: "Chloroquine treats malaria infections." },
+    tuberculosis: { tablet: "Rifampicin", info: "Rifampicin treats bacterial infections like tuberculosis." },
+    depression: { tablet: "Sertraline", info: "Sertraline is used to treat depression and anxiety." },
+    anxiety: { tablet: "Alprazolam", info: "Alprazolam treats anxiety and panic disorders." },
+    insomnia: { tablet: "Zolpidem", info: "Zolpidem helps with short-term sleep problems." },
+    
+    ear_infection: { tablet: "Amoxicillin", info: "Amoxicillin treats bacterial ear infections." },
+    eye_infection: { tablet: "Tobramycin", info: "Tobramycin treats bacterial eye infections." },
+    skin_rash: { tablet: "Hydrocortisone", info: "Hydrocortisone cream reduces skin inflammation and itching." },
+    urinary_infection: { tablet: "Nitrofurantoin", info: "Nitrofurantoin treats urinary tract infections." },
+    arthritis: { tablet: "Naproxen", info: "Naproxen relieves arthritis pain and swelling." },
+    gout: { tablet: "Allopurinol", info: "Allopurinol reduces uric acid levels in gout." },
+    heartburn: { tablet: "Ranitidine", info: "Ranitidine reduces stomach acid and heartburn." },
+    acidity: { tablet: "Pantoprazole", info: "Pantoprazole is used to treat acid reflux and ulcers." },
+    migraine: { tablet: "Sumatriptan", info: "Sumatriptan relieves migraine headaches." },
+    chickenpox: { tablet: "Acyclovir", info: "Acyclovir treats chickenpox and shingles." },
+    
+    measles: { tablet: "Vitamin A", info: "Vitamin A supports recovery from measles." },
+    mumps: { tablet: "Pain relievers", info: "Pain relievers help reduce mumps symptoms." },
+    dengue: { tablet: "Paracetamol", info: "Paracetamol reduces fever in dengue." },
+    typhoid: { tablet: "Cefixime", info: "Cefixime treats typhoid infections." },
+    anemia: { tablet: "Ferrous Sulfate", info: "Ferrous sulfate treats iron deficiency anemia." },
+    low_bp: { tablet: "Fludrocortisone", info: "Fludrocortisone helps raise blood pressure." },
+    high_cholesterol: { tablet: "Atorvastatin", info: "Atorvastatin lowers cholesterol levels." },
+    obesity: { tablet: "Orlistat", info: "Orlistat helps in weight loss." },
+    psoriasis: { tablet: "Methotrexate", info: "Methotrexate treats psoriasis and rheumatoid arthritis." },
+    eczema: { tablet: "Betamethasone", info: "Betamethasone reduces eczema inflammation." },
+    
+    sinusitis: { tablet: "Pseudoephedrine", info: "Pseudoephedrine relieves sinus pressure." },
+    tonsillitis: { tablet: "Penicillin", info: "Penicillin treats tonsillitis caused by bacteria." },
+    appendicitis: { tablet: "Surgery", info: "Appendicitis usually requires surgery." },
+    hernia: { tablet: "Surgery", info: "Hernias are repaired surgically." },
+    kidney_stone: { tablet: "Tamsulosin", info: "Tamsulosin helps pass kidney stones." },
+    gallstones: { tablet: "Surgery", info: "Gallstones often require surgical removal." },
+    epilepsy: { tablet: "Carbamazepine", info: "Carbamazepine controls seizures in epilepsy." },
+    parkinson: { tablet: "Levodopa", info: "Levodopa improves Parkinson's disease symptoms." },
+    stroke: { tablet: "Aspirin", info: "Aspirin helps prevent further strokes." },
+    alzheimer: { tablet: "Donepezil", info: "Donepezil treats symptoms of Alzheimer's disease." },
+    
+    bronchitis: { tablet: "Azithromycin", info: "Azithromycin treats bacterial bronchitis." },
+    pneumonia: { tablet: "Amoxicillin", info: "Amoxicillin treats bacterial pneumonia." },
+    covid19: { tablet: "Supportive Care", info: "Supportive care manages COVID-19 symptoms." },
+    hiv: { tablet: "Antiretroviral Therapy", info: "ART suppresses HIV infection." },
+    hepatitis_b: { tablet: "Tenofovir", info: "Tenofovir treats hepatitis B infections." },
+    hepatitis_c: { tablet: "Sofosbuvir", info: "Sofosbuvir cures hepatitis C infections." },
+    meningitis: { tablet: "Ceftriaxone", info: "Ceftriaxone treats bacterial meningitis." },
+    dengue_fever: { tablet: "Supportive Care", info: "Supportive care for dengue fever recovery." },
+    chikungunya: { tablet: "Pain Relievers", info: "Pain relievers help with chikungunya symptoms." },
+    swine_flu: { tablet: "Oseltamivir", info: "Oseltamivir treats swine flu infections." },
+    
+    zika_virus: { tablet: "Supportive Care", info: "Supportive care for Zika virus symptoms." },
+    yellow_fever: { tablet: "Vaccination", info: "Vaccination prevents yellow fever." },
+    rabies: { tablet: "Rabies Immunoglobulin", info: "Post-exposure prophylaxis prevents rabies." },
+    tetanus: { tablet: "Tetanus Immunoglobulin", info: "TIG prevents tetanus infection." },
+    whooping_cough: { tablet: "Azithromycin", info: "Azithromycin treats whooping cough." },
+    broken_bone: { tablet: "Pain Relievers", info: "Pain relievers ease broken bone pain." },
+    sprain: { tablet: "Ibuprofen", info: "Ibuprofen reduces swelling and pain from sprains." },
+    burns: { tablet: "Silver Sulfadiazine", info: "Silver Sulfadiazine treats burn wounds." },
+    dehydration: { tablet: "Oral Rehydration Salts", info: "ORS treats dehydration." },
+    frostbite: { tablet: "Warmth Therapy", info: "Warmth therapy treats frostbite injuries." },
+    
+    hypothermia: { tablet: "Warmth Therapy", info: "Warmth therapy treats hypothermia." },
+    heatstroke: { tablet: "Cooling Therapy", info: "Cooling therapy treats heatstroke." },
+    snake_bite: { tablet: "Antivenom", info: "Antivenom treats snake bites." },
+    dog_bite: { tablet: "Rabies Vaccine", info: "Rabies vaccine prevents infection after dog bite." },
+    anemia_deficiency: { tablet: "Iron Supplements", info: "Iron supplements treat anemia deficiency." },
+    vitamin_d_deficiency: { tablet: "Cholecalciferol", info: "Cholecalciferol treats Vitamin D deficiency." },
+    scabies: { tablet: "Permethrin Cream", info: "Permethrin cream treats scabies." },
+    lice_infestation: { tablet: "Permethrin Shampoo", info: "Permethrin shampoo treats lice infestation." },
+    fungal_infection: { tablet: "Clotrimazole", info: "Clotrimazole treats fungal infections." },
+    ringworm: { tablet: "Terbinafine", info: "Terbinafine treats ringworm infections." }
+  };
+  
+  export default diseases;
+  
